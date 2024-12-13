@@ -2,6 +2,10 @@
 
 R10.net üzerinde engellediğiniz kullanıcıların konularını görmemenizi sağlar.
 
+![Interface Screenshot](interface_screenshot.jpg)
+
+[Interface Video](interface_video.mp4)
+
 ## Kurulum
 
 Eklentiyi kullanmak için şu adımları takip edin:
