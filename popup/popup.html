@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="section">
+        <div class="section-header">
+          <h3>Engellenen Kullanıcılar</h3>
+          <div class="actions">
+            <button id="refreshBlockedUsers" class="refresh-btn">Yenile</button>
+          </div>
+        </div>
+        <ul id="blockedUsersList" class="list"></ul>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <h3>Sessize Alınan Kullanıcılar</h3>
+        </div>
+        <div class="add-form">
+          <input type="text" id="mutedUserInput" placeholder="Kullanıcı adı girin...">
+          <button id="addMutedUser">Ekle</button>
+        </div>
+        <ul id="mutedUsersList" class="list"></ul>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <h3>Sessize Alınan Konular</h3>
+        </div>
+        <div class="add-form">
+          <input type="text" id="mutedTopicInput" placeholder="Konu başlığı girin...">
+          <button id="addMutedTopic">Ekle</button>
+        </div>
+        <ul id="mutedTopicsList" class="list"></ul>
+      </div>
+
+      <div class="section">
+        <div class="setting-item">
+          <label>Engellenen kullanıcıları, Sessize Alınan Kullanıcı ve Konuları:</label>
+          <select id="displayMode">
+            <option value="blur">Bulanık Göster</option>
+            <option value="hide">Listede Gösterme</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="popup.js"></script>
+  </body>
+
+</html>

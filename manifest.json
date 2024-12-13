@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "R10.net Konu Engelleyici",
+  "version": "1.0",
+  "description": "R10.net üzerinde engellediğiniz kullanıcıların konularını görmemenizi sağlar.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "cookies",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.r10.net/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.r10.net/*"],
+      "js": ["content/content.js"]
+    }
+  ]
+}
